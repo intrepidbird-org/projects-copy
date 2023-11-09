@@ -6,55 +6,39 @@
     <title>Projects Website</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add some top padding to the page content to prevent sudden jump */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Larger than default z-index */
+        }
+        /* Add some top padding to the page content to prevent sudden jump */
+        .sticky + .content {
+            padding-top: 102px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
-    <header class="bg-dark text-white text-center p-4">
+    <header class="bg-dark text-white text-center p-4 sticky">
         <h1>Welcome to My Projects</h1>
         <p>Explore my portfolio of projects</p>
     </header>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
+    <section id="projects" class="content">
+        <div class="container py-5">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="images/combinatorics.png" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Gauss</h5>
-                            <p class="card-text">An advanced Mathematical AI Discord Bot</p>
-                            <a href="gauss" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="images/algebra.png" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">IntrepidGraph</h5>
-                            <p class="card-text">A fast and sleek graphing calculator</p>
-                            <a href="graphing-calculator" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="images/number-theory.png" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Prime Number Calculators</p>
-                            <a href="mersenne-primes" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
+                <!-- Your existing project cards here -->
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
-        <p>&copy; 2023 IntrepidBird. All rights reserved.</p>
+    <footer id="footer" class="bg-light text-center p-3">
+        <p>© 2023 IntrepidBird. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap & jQuery JS -->
@@ -62,3 +46,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
