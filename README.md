@@ -1,2 +1,3 @@
-# projects
+# Projects
+
 Projects Showcase
