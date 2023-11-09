@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    font-weight: bold;
+}
+
+#projects {
+    padding: 40px 0;
+}
+
+.card {
+    margin-bottom: 20px;
+}
